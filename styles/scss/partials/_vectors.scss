@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.brand {
+    padding: 10px 15px;
+    border: 1px solid $offWhite;
+    svg {
+        width: 50px;
+        fill: $accentYellow;
+    }
+}
+
+.socialIcons li {
+    padding: 10px;
+    svg {
+        width: 40px;
+        fill: rgba($color: $offWhite, $alpha: 0.4);
+        transition: 0.2s all;
+        g {
+        fill: rgba($color: $offWhite, $alpha: 0.4);
+        transition: 0.2s all;
+        }
+    }
+    &:hover, &:focus {
+        svg {
+            fill: rgba($color: $offWhite, $alpha: 1);
+            g {
+                fill: rgba($color: $offWhite, $alpha: 1);
+            }
+        }
+    }
+}

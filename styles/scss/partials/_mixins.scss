@@ -1,0 +1,25 @@
+
+
+// Remove default ul styling
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// Make ul horizontal
+@mixin horizontal-list {
+    @include reset-list;
+    li {
+      display: inline-block;
+    }
+  }
+
+// // Set up <h1> -> <h4> base styling
+// @mixin base-heading ($font-sizing, $line-height) {
+//     font-family: $heading-font;
+//     text-transform: uppercase;
+//     color: $white;
+//     font-size: $font-sizing;
+//     line-height: $line-height;
+// }

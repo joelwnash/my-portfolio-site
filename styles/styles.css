@@ -220,3 +220,259 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@font-face {
+  font-family: "Adlinnaka Bold";
+  src: url(../fonts/Adlinnaka/Adlinnaka-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Adlinnaka Bold Condensed Italic";
+  src: url(../fonts/Adlinnaka/Adlinnaka-BoldCondensedItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: condensed;
+}
+@font-face {
+  font-family: "Adlinnaka Bold Expanded";
+  src: url(../fonts/Adlinnaka/Adlinnaka-BoldExpanded.otf);
+  font-weight: bold;
+  font-stretch: expanded;
+}
+@font-face {
+  font-family: "Adlinnaka Light Expanded Italic";
+  src: url(../fonts/Adlinnaka/Adlinnaka-LightExpandedItalic.otf);
+  font-weight: light;
+  font-style: italic;
+  font-stretch: expanded;
+}
+@font-face {
+  font-family: "Adlinnaka Light Italic";
+  src: url(../fonts/Adlinnaka/Adlinnaka-LightItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: condensed;
+}
+@font-face {
+  font-family: "Adlinnaka Medium";
+  src: url(../fonts/Adlinnaka/Adlinnaka-Medium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Adlinnaka Medium Condensed Italic";
+  src: url(../fonts/Adlinnaka/Adlinnaka-MediumCondensedItalic.otf);
+  font-weight: medium;
+  font-style: italic;
+  font-stretch: condensed;
+}
+@font-face {
+  font-family: "Adlinnaka Regular";
+  src: url(../fonts/Adlinnaka/Adlinnaka-Regular.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Adlinnaka Regular Italic";
+  src: url(../fonts/Adlinnaka/Adlinnaka-RegularItalic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zirkon Bold";
+  src: url(../fonts/Zirkon/Zirkon-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Zirkon Bold Italic";
+  src: url(../fonts/Zirkon/Zirkon-BoldItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zirkon Light";
+  src: url(../fonts/Zirkon/Zirkon-Light.otf);
+  font-weight: light;
+}
+@font-face {
+  font-family: "Zirkon Light Italic";
+  src: url(../fonts/Zirkon/Zirkon-LightItalic.otf);
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zirkon Medium";
+  src: url(../fonts/Zirkon/Zirkon-Medium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Zirkon Medium Italic";
+  src: url(../fonts/Zirkon/Zirkon-MediumItalic.otf);
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zirkon Thin";
+  src: url(../fonts/Zirkon/Zirkon-Thin.otf);
+  font-weight: thin;
+}
+@font-face {
+  font-family: "Zirkon Thin Italic";
+  src: url(../fonts/Zirkon/Zirkon-ThinItalic.otf);
+  font-weight: thin;
+  font-style: italic;
+}
+h1 {
+  font-family: "Adlinnaka Bold";
+  font-size: 4rem;
+  color: #ebebeb;
+  line-height: 3.8rem;
+}
+h1 span {
+  font-family: "Adlinnaka Medium Condensed Italic";
+  color: #fbcb33;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+  line-height: 2.2rem;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Adlinnaka Bold Expanded";
+  color: #fbcb33;
+}
+
+h3 {
+  margin: 0;
+  font-family: "Adlinnaka Bold Condensed Italic";
+  color: #ebebeb;
+}
+
+p {
+  font-family: "Zirkon Light";
+  color: #ebebeb;
+}
+
+a {
+  font-family: "Zirkon Light Italic";
+  color: #ebebeb;
+}
+
+.introText p {
+  color: #ebebeb;
+  font-family: "Zirkon Thin Italic";
+  font-size: 1.4rem;
+  width: 240px;
+}
+
+.brand {
+  padding: 10px 15px;
+  border: 1px solid #ebebeb;
+}
+.brand svg {
+  width: 50px;
+  fill: #fbcb33;
+}
+
+.socialIcons li {
+  padding: 10px;
+}
+.socialIcons li svg {
+  width: 40px;
+  fill: rgba(235, 235, 235, 0.4);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.socialIcons li svg g {
+  fill: rgba(235, 235, 235, 0.4);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.socialIcons li:hover svg, .socialIcons li:focus svg {
+  fill: #ebebeb;
+}
+.socialIcons li:hover svg g, .socialIcons li:focus svg g {
+  fill: #ebebeb;
+}
+
+header {
+  background-color: #0f0c13;
+  min-height: 60vh;
+  padding: 20px 0 60px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 12, 19, 0.8)), to(#0f0c13)), url(../assets/codingBackground.jpg) no-repeat center center;
+  background: linear-gradient(to bottom, rgba(15, 12, 19, 0.8), #0f0c13), url(../assets/codingBackground.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+nav.topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+ul.topMenu, ul.socialIcons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.topMenu li, ul.socialIcons li {
+  display: inline-block;
+}
+ul.topMenu a, ul.socialIcons a {
+  text-decoration: none;
+}
+
+ul.topMenu a {
+  margin-right: 20px;
+}
+
+.aboutSection {
+  border-top: 2px solid rgba(235, 235, 235, 0.05);
+  background-color: #0f0c13;
+  padding: 60px 0;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.aboutImage {
+  width: 40%;
+}
+
+.aboutText {
+  width: 55%;
+}

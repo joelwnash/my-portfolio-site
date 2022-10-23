@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+.aboutSection {
+    border-top: 2px solid rgba($color: $offWhite, $alpha: 0.05);
+    background-color: $royalPurple;
+    padding: 60px 0;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.aboutImage {
+    width: 40%;
+}
+
+.aboutText {
+    width: 55%;
+}

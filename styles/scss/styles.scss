@@ -1,7 +1,9 @@
 @use './partials/setup.scss';
 @use './partials/baseStyles.scss';
 @use './partials/variables' as *;
+@use './partials/mixins' as *;
 @use './partials/typography';
+@use './partials/vectors';
 @use './partials/header';
 @use './partials/nav';
 @use './partials/sections';
