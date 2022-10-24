@@ -15,7 +15,12 @@ ul.topMenu, ul.socialIcons {
     }
 }
 
+ul.socialIcons a {
+    display: inline-block;
+    line-height: 0;
+}
+
 ul.topMenu a {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 

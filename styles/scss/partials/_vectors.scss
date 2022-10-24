@@ -1,12 +1,8 @@
 @use 'variables' as *;
 
-.brand {
-    padding: 10px 15px;
-    border: 1px solid $offWhite;
-    svg {
-        width: 50px;
-        fill: $accentYellow;
-    }
+.brand svg {
+    width: 50px;
+    fill: $accentYellow;
 }
 
 .socialIcons li {
@@ -28,4 +24,38 @@
             }
         }
     }
+}
+
+.skillList {
+    svg {
+        width: 60px;
+        &:hover, &:focus {
+            animation: bouncy 1s 1;
+        }
+    }
+}
+
+// Animation from https://codepen.io/StrengthandFreedom/pen/zajxqd
+
+@keyframes bouncy {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	20% {
+		-webkit-transform: translateY(-10px);
+		        transform: translateY(-10px);
+	}
+	40% {
+		-webkit-transform: translateY(-4px);
+		        transform: translateY(-4px);
+	}
+}
+
+.projectSkills svg {
+    width: 50px;
 }

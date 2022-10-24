@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+footer {
+    background-color: $royalPurple;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    border-top: 2px solid rgba($color: $offWhite, $alpha: 0.05);
+}

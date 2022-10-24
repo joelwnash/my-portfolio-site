@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-.aboutSection {
+.aboutSection, .skillsSection, .projectsSection, .contactSection {
     border-top: 2px solid rgba($color: $offWhite, $alpha: 0.05);
     background-color: $royalPurple;
     padding: 60px 0;
@@ -10,7 +10,6 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .aboutImage {
@@ -19,4 +18,33 @@
 
 .aboutText {
     width: 55%;
+}
+
+.skillsContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.devSkills, .designSkills {
+    border: 2px solid rgba($color: $offWhite, $alpha: 0.4);
+    border-radius: 20px;
+}
+
+.devSkills {
+    width: 75%;
+}
+
+.designSkills {
+    width: 25%;
+    height: fit-content;
+}
+
+.projectOne, .projectTwo, .projectThree {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.projectImageContainer, .projectDescription {
+    width: 45%;
 }

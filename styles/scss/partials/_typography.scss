@@ -124,6 +124,7 @@ h1 {
     font-size: 4rem;
     color: $offWhite;
     line-height: 3.8rem;
+    margin-top: 100px;
     span {
         font-family: 'Adlinnaka Medium Condensed Italic';
         color: $accentYellow;
@@ -139,9 +140,8 @@ h2 {
     margin: 0;
     font-family: 'Adlinnaka Bold Expanded';
     color: $accentYellow;
-    // padding: 10px 20px;
-    // background-color: $accentYellow;
-    // display: inline-block;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 h3 {
@@ -150,14 +150,49 @@ h3 {
     color: $offWhite;
 }
 
+h4 {
+    font-family: "Zirkon Bold Italic";
+    color: $offWhite;
+    font-size: 1.8rem;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h5 {
+    text-align: center;
+    color: $offWhite;
+    font-family: "Zirkon Bold Italic";
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: -2px -2px 40px -2px;
+    background-color: rgba($color: $offWhite, $alpha: 0.3);
+    padding: 20px 10px;
+    border-radius: 18px 18px 0 0;
+}
+
 p {
     font-family: 'Zirkon Light';
     color: $offWhite;
+    line-height: 1.25rem;
 }
 
 a {
     font-family: 'Zirkon Light Italic';
     color: $offWhite;
+    transition: 0.2s color;
+    &:hover, &:focus {
+        color: $accentYellow;
+    }
+}
+
+.aboutText a {
+    font-family: "Zirkon Thin Italic";
+    text-decoration: none;
+    transition: 0.2s color;
+    &:hover, &:focus {
+        color: $accentYellow;
+    }
 }
 
 .introText p {
@@ -165,4 +200,17 @@ a {
     font-family: 'Zirkon Thin Italic';
     font-size: 1.4rem;
     width: 240px;
+    line-height: 1.6rem;
 }
+
+.skillList p {
+    margin: 10px 0 0 0;
+}
+
+p.projectTools {
+    font-family: "Adlinnaka Light Italic";
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: $accentYellow;
+}
+
