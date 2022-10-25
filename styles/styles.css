@@ -223,6 +223,7 @@ template {
 
 html {
   font-size: 125%;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -524,6 +525,7 @@ nav.topNav {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  position: relative;
 }
 
 ul.topMenu, ul.socialIcons {
@@ -538,7 +540,24 @@ ul.topMenu a, ul.socialIcons a {
   text-decoration: none;
 }
 
-.menuBars {
+.hamburgerMenu {
+  background-color: transparent;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: 0;
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+  cursor: pointer;
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.close-icon {
   display: none;
 }
 
@@ -548,7 +567,7 @@ ul.socialIcons a {
 }
 
 ul.topMenu a {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .aboutSection, .skillsSection, .projectsSection, .contactSection {
@@ -685,7 +704,7 @@ textarea {
   background-color: #0f0c13;
 }
 
-button {
+form button {
   font-family: "Adlinnaka Medium";
   border: none;
   margin-top: 10px;
@@ -698,7 +717,7 @@ button {
   transition: 0.2s all;
   border: 2px solid #fbcb33;
 }
-button:hover, button:focus {
+form button:hover, form button:focus {
   -webkit-box-shadow: 0 0 10px #0f0c13;
           box-shadow: 0 0 10px #0f0c13;
   border: 2px solid #0f0c13;
@@ -822,6 +841,33 @@ ul.projectLinks li {
   }
 }
 @media (max-width: 768px) {
+  .topNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    width: 100vw;
+    text-align: right;
+    margin-top: 54px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .topNav ul.showMenu {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .topNav ul li {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

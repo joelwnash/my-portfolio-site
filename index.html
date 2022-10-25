@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joel Nash - Front-End Developer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -31,13 +33,16 @@
                     </svg>
                 </span>
             </div>
-            <a href="" class="menuBars"></a>
             <ul class="topMenu">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="menuItem">About Me</a></li>
+                <li><a href="#skills" class="menuItem">Skills</a></li>
+                <li><a href="#projects" class="menuItem">Projects</a></li>
+                <li><a href="#contact" class="menuItem">Contact</a></li>
             </ul>
+            <button class="hamburgerMenu">
+                <i class="material-icons hamburger-icon">menu</i>
+                <i class="material-icons close-icon">close</i>
+            </button>
         </nav>
 
         <section class="introSection wrapper">
@@ -443,6 +448,8 @@
         <p>Made by Joel Nash with a whole heckuva lot of <span aria-label="smiling face with hearts emoji">🥰</span> (and <span aria-label="anxious face with sweat emoji">😰</span>)</p>
 
     </footer>
+
+    <script src="./scripts/script.js"></script>
 
 </body>
 </html>

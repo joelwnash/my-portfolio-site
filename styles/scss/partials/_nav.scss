@@ -6,6 +6,7 @@ nav.topNav {
     justify-content: space-between;
     padding-top: 20px;
     flex-flow: row nowrap;
+    position: relative;
 }
 
 ul.topMenu, ul.socialIcons {
@@ -15,7 +16,21 @@ ul.topMenu, ul.socialIcons {
     }
 }
 
-.menuBars {
+.hamburgerMenu {
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: 0;
+    transform: scale(150%);
+    cursor: pointer;
+    display: none;
+    width: fit-content;
+}
+
+.close-icon {
     display: none;
 }
 
@@ -25,6 +40,6 @@ ul.socialIcons a {
 }
 
 ul.topMenu a {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
