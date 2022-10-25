@@ -1,0 +1,175 @@
+// Tablet landscape sizing - 1024px
+@media (max-width: 1024px) {
+
+    // Contact Section
+    .contactContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    aside, form {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    aside {
+        margin-bottom: 40px;
+    }
+
+    button {
+        width: 50%;
+        margin: 10px auto 0;
+        display: block;
+    }
+
+}
+
+
+
+
+// Tablet sizing - 768px
+@media (max-width: 768px) {
+
+    // About Section
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .aboutText {
+        width: 80%;
+    }
+
+    // Skills Section
+    .skillsContainer {
+        flex-direction: column;
+    }
+
+    .devSkills, .designSkills {
+        width: 100%;
+    }
+
+    // Projects Section
+    .projectOne, .projectTwo, .projectThree {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .projectImageContainer {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h4 {
+        margin-top: 40px;
+    }
+
+    .projectDescription {
+        width: 80%;
+        text-align: center;
+    }
+
+    ul.projectSkills {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .projectTwo ul.projectSkills {
+        justify-content: center;
+    }
+
+    // Contact Section
+    button {
+        width: 100%;
+    }
+}
+
+
+
+
+// Large mobile sizing - 480px
+@media (max-width: 480px) {
+
+    // Header
+    h1 {
+        font-size: 3.6rem;
+        line-height: 3.2rem;
+        span {
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+    }
+
+    // About Section
+    .aboutImage {
+        width: 60%;
+    }
+
+    .aboutText {
+        width: 100%;
+    }
+
+    // Skills Section
+    ul.skillList {
+        gap: 50px;
+        padding: 0 30px 30px;
+    }
+
+    // Projects Section
+    .projectImageContainer {
+        width: 80%;
+    }
+
+    .projectDescription {
+        width: 100%;
+    }
+
+    // Contact Section
+    aside, form {
+        width: 100%;
+    }
+
+    form {
+        padding: 10px 20px 20px;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    // Footer
+    footer {
+        padding: 5px 20px;
+    }
+
+}
+
+
+
+
+// Mobile sizing - 320px
+@media (max-width: 480px) {
+
+    // About Section
+    .aboutImage {
+        width: 80%;
+    }
+
+    ul.skillList {
+        gap: 40px;
+    }
+
+    .skillList svg {
+        width: 42px;
+    }
+
+    // Projects Section
+    .projectOne, .projectTwo {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+}

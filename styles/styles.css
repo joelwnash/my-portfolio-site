@@ -795,3 +795,141 @@ ul.projectLinks {
 ul.projectLinks li {
   display: inline-block;
 }
+
+@media (max-width: 1024px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  aside, form {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  aside {
+    margin-bottom: 40px;
+  }
+  button {
+    width: 50%;
+    margin: 10px auto 0;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+  .aboutText {
+    width: 80%;
+  }
+  .skillsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .devSkills, .designSkills {
+    width: 100%;
+  }
+  .projectOne, .projectTwo, .projectThree {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projectImageContainer {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+  h4 {
+    margin-top: 40px;
+  }
+  .projectDescription {
+    width: 80%;
+    text-align: center;
+  }
+  ul.projectSkills {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projectTwo ul.projectSkills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  button {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.6rem;
+    line-height: 3.2rem;
+  }
+  h1 span {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .aboutImage {
+    width: 60%;
+  }
+  .aboutText {
+    width: 100%;
+  }
+  ul.skillList {
+    gap: 50px;
+    padding: 0 30px 30px;
+  }
+  .projectImageContainer {
+    width: 80%;
+  }
+  .projectDescription {
+    width: 100%;
+  }
+  aside, form {
+    width: 100%;
+  }
+  form {
+    padding: 10px 20px 20px;
+  }
+  input, textarea {
+    font-size: 0.9rem;
+  }
+  footer {
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutImage {
+    width: 80%;
+  }
+  ul.skillList {
+    gap: 40px;
+  }
+  .skillList svg {
+    width: 42px;
+  }
+  .projectOne, .projectTwo {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+}
