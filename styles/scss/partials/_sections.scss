@@ -1,5 +1,6 @@
 @use 'variables' as *;
 
+// About Section
 .aboutSection, .skillsSection, .projectsSection, .contactSection {
     border-top: 2px solid rgba($color: $offWhite, $alpha: 0.05);
     background-color: $royalPurple;
@@ -20,6 +21,7 @@
     width: 55%;
 }
 
+// Skills Section
 .skillsContainer {
     display: flex;
     gap: 40px;
@@ -39,12 +41,37 @@
     height: fit-content;
 }
 
+// Projects Section
 .projectOne, .projectTwo, .projectThree {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba($color: $offWhite, $alpha: 0.05);
+}
+
+.projectTwo {
+    flex-flow: row-reverse nowrap;
+    text-align: right;
+}
+
+.projectThree {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .projectImageContainer, .projectDescription {
     width: 45%;
+}
+
+// Contact Section
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 46%;
 }

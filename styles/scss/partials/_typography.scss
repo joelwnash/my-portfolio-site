@@ -186,13 +186,18 @@ a {
     }
 }
 
-.aboutText a {
+.aboutText a, .projectDescription a, .contactContainer a {
     font-family: "Zirkon Thin Italic";
-    text-decoration: none;
+    // text-decoration: none;
     transition: 0.2s color;
     &:hover, &:focus {
         color: $accentYellow;
     }
+}
+
+a:focus {
+    outline: 2px solid $accentYellow;
+    border-radius: 4px;
 }
 
 .introText p {

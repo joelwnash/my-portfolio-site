@@ -29,6 +29,13 @@ ul.projectSkills {
     }
 }
 
+.projectTwo ul.projectSkills {
+    flex-flow: row wrap;
+    margin-right: 0;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
 ul.projectLinks {
     @include horizontal-list;
 }
